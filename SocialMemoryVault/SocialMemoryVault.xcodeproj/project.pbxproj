@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000001 /* SocialMemoryVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000001 /* SocialMemoryVaultApp.swift */; };
+		AA0000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000002 /* ContentView.swift */; };
+		AA0000000000000000000003 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000003 /* Entity.swift */; };
+		AA0000000000000000000004 /* EntityAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000004 /* EntityAlias.swift */; };
+		AA0000000000000000000005 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000005 /* Memory.swift */; };
+		AA0000000000000000000006 /* MemoryEntityLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000006 /* MemoryEntityLink.swift */; };
+		AA0000000000000000000007 /* Claim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000007 /* Claim.swift */; };
+		AA0000000000000000000008 /* IDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000008 /* IDGenerator.swift */; };
+		AA0000000000000000000009 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000009 /* DateUtils.swift */; };
+		AA0000000000000000000010 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000010 /* Validation.swift */; };
+		AA0000000000000000000011 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000011 /* DatabaseController.swift */; };
+		AA0000000000000000000012 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000012 /* ExportService.swift */; };
+		AA0000000000000000000013 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000013 /* ImportService.swift */; };
+		AA0000000000000000000014 /* EntityResolutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000014 /* EntityResolutionService.swift */; };
+		AA0000000000000000000015 /* MemoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000015 /* MemoryService.swift */; };
+		AA0000000000000000000016 /* ClaimService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000016 /* ClaimService.swift */; };
+		AA0000000000000000000017 /* PrivacyFilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000017 /* PrivacyFilterService.swift */; };
+		AA0000000000000000000018 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000018 /* HomeView.swift */; };
+		AA0000000000000000000019 /* EntityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000019 /* EntityListView.swift */; };
+		AA0000000000000000000020 /* EntityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000020 /* EntityDetailView.swift */; };
+		AA0000000000000000000021 /* AddEditEntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000021 /* AddEditEntityView.swift */; };
+		AA0000000000000000000022 /* AliasManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000022 /* AliasManagerView.swift */; };
+		AA0000000000000000000023 /* MemoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000023 /* MemoryListView.swift */; };
+		AA0000000000000000000024 /* MemoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000024 /* MemoryDetailView.swift */; };
+		AA0000000000000000000025 /* AddEditMemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000025 /* AddEditMemoryView.swift */; };
+		AA0000000000000000000026 /* EntityLinkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000026 /* EntityLinkerView.swift */; };
+		AA0000000000000000000027 /* ClaimListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000027 /* ClaimListView.swift */; };
+		AA0000000000000000000028 /* AddEditClaimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000028 /* AddEditClaimView.swift */; };
+		AA0000000000000000000029 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000029 /* SearchView.swift */; };
+		AA0000000000000000000030 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000030 /* SettingsView.swift */; };
+		AA0000000000000000000031 /* ExportImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000031 /* ExportImportView.swift */; };
+		AA0000000000000000000050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000050 /* Assets.xcassets */; };
+		AA0000000000000000000051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000051 /* Preview Assets.xcassets */; };
+		AA0000000000000000000060 /* PredicateClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000060 /* PredicateClassificationService.swift */; };
+		AA0000000000000000000061 /* MigrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000061 /* MigrationService.swift */; };
+		AA0000000000000000000062 /* DataHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000062 /* DataHealthView.swift */; };
+		AA0000000000000000000063 /* AcronymAliasDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000063 /* AcronymAliasDetector.swift */; };
+		AA0000000000000000000064 /* StrandedValueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000064 /* StrandedValueService.swift */; };
+		GG0000000000000000000001 /* EntityResolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000001 /* EntityResolutionTests.swift */; };
+		GG0000000000000000000002 /* PredicateClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000002 /* PredicateClassificationTests.swift */; };
+		GG0000000000000000000003 /* AcronymAliasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000003 /* AcronymAliasTests.swift */; };
+		GG0000000000000000000004 /* StrandedValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000004 /* StrandedValueTests.swift */; };
+		GG0000000000000000000005 /* MigrationIdempotencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000005 /* MigrationIdempotencyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0000000000000000000001 /* SocialMemoryVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMemoryVaultApp.swift; sourceTree = "<group>"; };
+		BB0000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000003 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		BB0000000000000000000004 /* EntityAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityAlias.swift; sourceTree = "<group>"; };
+		BB0000000000000000000005 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		BB0000000000000000000006 /* MemoryEntityLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryEntityLink.swift; sourceTree = "<group>"; };
+		BB0000000000000000000007 /* Claim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claim.swift; sourceTree = "<group>"; };
+		BB0000000000000000000008 /* IDGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDGenerator.swift; sourceTree = "<group>"; };
+		BB0000000000000000000009 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		BB0000000000000000000010 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		BB0000000000000000000011 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		BB0000000000000000000012 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000013 /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000014 /* EntityResolutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityResolutionService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000015 /* MemoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000016 /* ClaimService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000017 /* PrivacyFilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyFilterService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000019 /* EntityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityListView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000020 /* EntityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetailView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000021 /* AddEditEntityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEntityView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000022 /* AliasManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasManagerView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000023 /* MemoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryListView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000024 /* MemoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetailView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000025 /* AddEditMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditMemoryView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000026 /* EntityLinkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityLinkerView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000027 /* ClaimListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimListView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000028 /* AddEditClaimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditClaimView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000029 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000030 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000031 /* ExportImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportImportView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0000000000000000000051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD0000000000000000000004 /* SocialMemoryVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMemoryVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0000000000000000000060 /* PredicateClassificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateClassificationService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000061 /* MigrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000062 /* DataHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHealthView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000063 /* AcronymAliasDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAliasDetector.swift; sourceTree = "<group>"; };
+		BB0000000000000000000064 /* StrandedValueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrandedValueService.swift; sourceTree = "<group>"; };
+		EE0000000000000000000001 /* SocialMemoryVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMemoryVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0000000000000000000001 /* EntityResolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityResolutionTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000002 /* PredicateClassificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateClassificationTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000003 /* AcronymAliasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAliasTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000004 /* StrandedValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrandedValueTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000005 /* MigrationIdempotencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationIdempotencyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0000000000000000000008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0000000000000000000006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0000000000000000000005;
+			remoteInfo = SocialMemoryVault;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				CC0000000000000000000003 /* SocialMemoryVault */,
+				CC0000000000000000000020 /* SocialMemoryVaultTests */,
+				CC0000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD0000000000000000000004 /* SocialMemoryVault.app */,
+				EE0000000000000000000001 /* SocialMemoryVaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000003 /* SocialMemoryVault */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000001 /* SocialMemoryVaultApp.swift */,
+				BB0000000000000000000002 /* ContentView.swift */,
+				CC0000000000000000000004 /* Models */,
+				CC0000000000000000000005 /* Utilities */,
+				CC0000000000000000000006 /* Persistence */,
+				CC0000000000000000000007 /* Services */,
+				CC0000000000000000000008 /* Features */,
+				BB0000000000000000000050 /* Assets.xcassets */,
+				CC0000000000000000000015 /* Preview Content */,
+			);
+			path = SocialMemoryVault;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000003 /* Entity.swift */,
+				BB0000000000000000000004 /* EntityAlias.swift */,
+				BB0000000000000000000005 /* Memory.swift */,
+				BB0000000000000000000006 /* MemoryEntityLink.swift */,
+				BB0000000000000000000007 /* Claim.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000005 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000008 /* IDGenerator.swift */,
+				BB0000000000000000000009 /* DateUtils.swift */,
+				BB0000000000000000000010 /* Validation.swift */,
+				BB0000000000000000000063 /* AcronymAliasDetector.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000006 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000011 /* DatabaseController.swift */,
+				BB0000000000000000000012 /* ExportService.swift */,
+				BB0000000000000000000013 /* ImportService.swift */,
+				BB0000000000000000000061 /* MigrationService.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000014 /* EntityResolutionService.swift */,
+				BB0000000000000000000015 /* MemoryService.swift */,
+				BB0000000000000000000016 /* ClaimService.swift */,
+				BB0000000000000000000017 /* PrivacyFilterService.swift */,
+				BB0000000000000000000060 /* PredicateClassificationService.swift */,
+				BB0000000000000000000064 /* StrandedValueService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000008 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000000000000000000009 /* Home */,
+				CC0000000000000000000010 /* Entities */,
+				CC0000000000000000000011 /* Memories */,
+				CC0000000000000000000012 /* Claims */,
+				CC0000000000000000000013 /* Search */,
+				CC0000000000000000000014 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000009 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000018 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000010 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000019 /* EntityListView.swift */,
+				BB0000000000000000000020 /* EntityDetailView.swift */,
+				BB0000000000000000000021 /* AddEditEntityView.swift */,
+				BB0000000000000000000022 /* AliasManagerView.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000011 /* Memories */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000023 /* MemoryListView.swift */,
+				BB0000000000000000000024 /* MemoryDetailView.swift */,
+				BB0000000000000000000025 /* AddEditMemoryView.swift */,
+				BB0000000000000000000026 /* EntityLinkerView.swift */,
+			);
+			path = Memories;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000012 /* Claims */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000027 /* ClaimListView.swift */,
+				BB0000000000000000000028 /* AddEditClaimView.swift */,
+			);
+			path = Claims;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000013 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000029 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000014 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000030 /* SettingsView.swift */,
+				BB0000000000000000000031 /* ExportImportView.swift */,
+				BB0000000000000000000062 /* DataHealthView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000020 /* SocialMemoryVaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0000000000000000000001 /* EntityResolutionTests.swift */,
+				FF0000000000000000000002 /* PredicateClassificationTests.swift */,
+				FF0000000000000000000003 /* AcronymAliasTests.swift */,
+				FF0000000000000000000004 /* StrandedValueTests.swift */,
+				FF0000000000000000000005 /* MigrationIdempotencyTests.swift */,
+			);
+			path = SocialMemoryVaultTests;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000015 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000051 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD0000000000000000000005 /* SocialMemoryVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0000000000000000000012 /* Build configuration list for PBXNativeTarget "SocialMemoryVault" */;
+			buildPhases = (
+				DD0000000000000000000001 /* Sources */,
+				DD0000000000000000000002 /* Frameworks */,
+				DD0000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialMemoryVault;
+			productName = SocialMemoryVault;
+			productReference = DD0000000000000000000004 /* SocialMemoryVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE0000000000000000000002 /* SocialMemoryVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0000000000000000000005 /* Build configuration list for PBXNativeTarget "SocialMemoryVaultTests" */;
+			buildPhases = (
+				EE0000000000000000000003 /* Sources */,
+				EE0000000000000000000004 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0000000000000000000009 /* PBXTargetDependency */,
+			);
+			name = SocialMemoryVaultTests;
+			productName = SocialMemoryVaultTests;
+			productReference = EE0000000000000000000001 /* SocialMemoryVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0000000000000000000006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DD0000000000000000000005 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EE0000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DD0000000000000000000005;
+					};
+				};
+			};
+			buildConfigurationList = DD0000000000000000000011 /* Build configuration list for PBXProject "SocialMemoryVault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC0000000000000000000001;
+			productRefGroup = CC0000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0000000000000000000005 /* SocialMemoryVault */,
+				EE0000000000000000000002 /* SocialMemoryVaultTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000050 /* Assets.xcassets in Resources */,
+				AA0000000000000000000051 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000001 /* SocialMemoryVaultApp.swift in Sources */,
+				AA0000000000000000000002 /* ContentView.swift in Sources */,
+				AA0000000000000000000003 /* Entity.swift in Sources */,
+				AA0000000000000000000004 /* EntityAlias.swift in Sources */,
+				AA0000000000000000000005 /* Memory.swift in Sources */,
+				AA0000000000000000000006 /* MemoryEntityLink.swift in Sources */,
+				AA0000000000000000000007 /* Claim.swift in Sources */,
+				AA0000000000000000000008 /* IDGenerator.swift in Sources */,
+				AA0000000000000000000009 /* DateUtils.swift in Sources */,
+				AA0000000000000000000010 /* Validation.swift in Sources */,
+				AA0000000000000000000011 /* DatabaseController.swift in Sources */,
+				AA0000000000000000000012 /* ExportService.swift in Sources */,
+				AA0000000000000000000013 /* ImportService.swift in Sources */,
+				AA0000000000000000000014 /* EntityResolutionService.swift in Sources */,
+				AA0000000000000000000015 /* MemoryService.swift in Sources */,
+				AA0000000000000000000016 /* ClaimService.swift in Sources */,
+				AA0000000000000000000017 /* PrivacyFilterService.swift in Sources */,
+				AA0000000000000000000018 /* HomeView.swift in Sources */,
+				AA0000000000000000000019 /* EntityListView.swift in Sources */,
+				AA0000000000000000000020 /* EntityDetailView.swift in Sources */,
+				AA0000000000000000000021 /* AddEditEntityView.swift in Sources */,
+				AA0000000000000000000022 /* AliasManagerView.swift in Sources */,
+				AA0000000000000000000023 /* MemoryListView.swift in Sources */,
+				AA0000000000000000000024 /* MemoryDetailView.swift in Sources */,
+				AA0000000000000000000025 /* AddEditMemoryView.swift in Sources */,
+				AA0000000000000000000026 /* EntityLinkerView.swift in Sources */,
+				AA0000000000000000000027 /* ClaimListView.swift in Sources */,
+				AA0000000000000000000028 /* AddEditClaimView.swift in Sources */,
+				AA0000000000000000000029 /* SearchView.swift in Sources */,
+				AA0000000000000000000030 /* SettingsView.swift in Sources */,
+				AA0000000000000000000031 /* ExportImportView.swift in Sources */,
+				AA0000000000000000000060 /* PredicateClassificationService.swift in Sources */,
+				AA0000000000000000000061 /* MigrationService.swift in Sources */,
+				AA0000000000000000000062 /* DataHealthView.swift in Sources */,
+				AA0000000000000000000063 /* AcronymAliasDetector.swift in Sources */,
+				AA0000000000000000000064 /* StrandedValueService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				GG0000000000000000000001 /* EntityResolutionTests.swift in Sources */,
+				GG0000000000000000000002 /* PredicateClassificationTests.swift in Sources */,
+				GG0000000000000000000003 /* AcronymAliasTests.swift in Sources */,
+				GG0000000000000000000004 /* StrandedValueTests.swift in Sources */,
+				GG0000000000000000000005 /* MigrationIdempotencyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0000000000000000000009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0000000000000000000005 /* SocialMemoryVault */;
+			targetProxy = EE0000000000000000000008 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD0000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_EXCEPTION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD0000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_EXCEPTION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0000000000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialMemoryVault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.socialmemoryvault.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD0000000000000000000010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialMemoryVault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.socialmemoryvault.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE0000000000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.socialmemoryvault.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMemoryVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SocialMemoryVault";
+			};
+			name = Debug;
+		};
+		EE0000000000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.socialmemoryvault.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMemoryVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SocialMemoryVault";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0000000000000000000011 /* Build configuration list for PBXProject "SocialMemoryVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000007 /* Debug */,
+				DD0000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0000000000000000000012 /* Build configuration list for PBXNativeTarget "SocialMemoryVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000009 /* Debug */,
+				DD0000000000000000000010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+		EE0000000000000000000005 /* Build configuration list for PBXNativeTarget "SocialMemoryVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0000000000000000000006 /* Debug */,
+				EE0000000000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+	};
+	rootObject = DD0000000000000000000006 /* Project object */;
+}
