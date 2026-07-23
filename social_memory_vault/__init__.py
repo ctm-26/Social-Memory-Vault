@@ -13,6 +13,11 @@ from .models import (
     RetrievalConfig,
     RetrievalResult,
 )
+from .signal_contract import (
+    SignalContractError,
+    load_signal_schema,
+    validate_signal_contract,
+)
 from .vault import SparseGraphVectorMemory
 
 __all__ = [
@@ -27,6 +32,9 @@ __all__ = [
     "cosine",
     "dot",
     "tokenize",
+    "SignalContractError",
+    "load_signal_schema",
+    "validate_signal_contract",
 ]
 
 __version__ = "0.1.0"
