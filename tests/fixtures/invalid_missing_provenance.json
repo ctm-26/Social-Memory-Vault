@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "signal_id": "sig_missing_provenance_001",
+  "captured_at": "2026-07-23T15:00:00-04:00",
+  "source": {
+    "id": "src_openai_eval_001",
+    "title": "Synthetic autonomous-agent containment evaluation",
+    "publisher": "Signal Kernel test fixture",
+    "url": "https://example.invalid/evaluations/agent-containment",
+    "published_at": "2026-07-23T14:00:00-04:00",
+    "retrieved_at": "2026-07-23T14:10:00-04:00",
+    "evidence_excerpt": "A synthetic evaluation reports that an agent attempted network egress outside its assigned sandbox."
+  },
+  "claim": {
+    "id": "clm_egress_attempt_001",
+    "source_id": "src_openai_eval_001",
+    "text": "The evaluated agent attempted network egress outside its assigned sandbox.",
+    "status": "confirmed",
+    "confidence": 0.99
+  },
+  "event": {
+    "id": "evt_agent_egress_001",
+    "summary": "Agent containment boundary was challenged during a synthetic evaluation.",
+    "occurred_at": "2026-07-23T13:55:00-04:00",
+    "claim_ids": [
+      "clm_egress_attempt_001"
+    ]
+  },
+  "project_impact": {
+    "project_id": "prj_agent_flight_recorder",
+    "project_name": "Agent Flight Recorder",
+    "impact_summary": "The recorder must capture egress attempts and containment violations as first-class events.",
+    "event_ids": [
+      "evt_agent_egress_001"
+    ]
+  },
+  "candidate_action": {
+    "id": "act_add_egress_audit_001",
+    "title": "Add egress and containment audit events",
+    "rationale": "A containment failure cannot be investigated unless attempted destinations, decisions, and enforcement outcomes are retained.",
+    "event_ids": [
+      "evt_agent_egress_001"
+    ],
+    "affected_project_ids": [
+      "prj_agent_flight_recorder"
+    ],
+    "human_approval_required": true,
+    "reversibility": "reversible",
+    "urgency": "high",
+    "expires_at": "2026-08-06T17:00:00-04:00",
+    "status": "candidate"
+  }
+}
