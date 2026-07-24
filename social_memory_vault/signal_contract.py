@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import json
+from importlib import resources
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Mapping, TextIO
 
 from jsonschema import Draft202012Validator, FormatChecker
 
@@ -13,17 +14,29 @@ class SignalContractError(ValueError):
     """Raised when a signal fails structural or evidence-link validation."""
 
 
-def _default_schema_path() -> Path:
-    return Path(__file__).resolve().parent.parent / "schemas" / "signal.schema.json"
+def _read_schema(handle: TextIO) -> dict[str, Any]:
+    schema = json.load(handle)
+    Draft202012Validator.check_schema(schema)
+    return schema
 
 
 def load_signal_schema(schema_path: str | Path | None = None) -> dict[str, Any]:
-    """Load and meta-validate the Signal Kernel JSON Schema."""
-    path = Path(schema_path) if schema_path is not None else _default_schema_path()
-    with path.open("r", encoding="utf-8") as handle:
-        schema = json.load(handle)
-    Draft202012Validator.check_schema(schema)
-    return schema
+    """Load and meta-validate the Signal Kernel JSON Schema.
+
+    With no explicit path, the schema is read through ``importlib.resources`` so
+    it remains available from an installed wheel or other packaged distribution.
+    Passing ``schema_path`` preserves support for caller-supplied schema files.
+    """
+    if schema_path is not None:
+        path = Path(schema_path)
+        with path.open("r", encoding="utf-8") as handle:
+            return _read_schema(handle)
+
+    schema_resource = resources.files("social_memory_vault.schemas").joinpath(
+        "signal.schema.json"
+    )
+    with schema_resource.open("r", encoding="utf-8") as handle:
+        return _read_schema(handle)
 
 
 def validate_signal_contract(
