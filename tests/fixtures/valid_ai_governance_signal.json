@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "signal_id": "sig_ai_governance_001",
+  "captured_at": "2026-07-24T11:30:00-04:00",
+  "source": {
+    "id": "src_ai_governance_001",
+    "title": "Synthetic guidance for governed AI automation",
+    "publisher": "Signal Kernel test fixture",
+    "url": "https://example.invalid/guidance/governed-ai-automation",
+    "published_at": "2026-07-24T09:00:00-04:00",
+    "retrieved_at": "2026-07-24T11:15:00-04:00",
+    "content_hash": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "evidence_excerpt": "Synthetic guidance recommends scoped permissions, human review for sensitive actions, continuous monitoring, complete audit records, validated integrations, gradual rollout, and environmental separation."
+  },
+  "claim": {
+    "id": "clm_ai_controls_001",
+    "source_id": "src_ai_governance_001",
+    "text": "AI automation should use explicit permissions, review points, observability, integration assurance, gradual autonomy, and containment controls.",
+    "status": "confirmed",
+    "confidence": 0.98
+  },
+  "event": {
+    "id": "evt_ai_guidance_001",
+    "summary": "A synthetic advisory defined baseline controls for governed AI automation.",
+    "occurred_at": "2026-07-24T09:00:00-04:00",
+    "claim_ids": [
+      "clm_ai_controls_001"
+    ]
+  },
+  "project_impact": {
+    "project_id": "prj_agent_flight_recorder",
+    "project_name": "Agent Flight Recorder",
+    "impact_summary": "The recorder should preserve approvals, permission changes, tool activity, integration identity, alerts, interruption, and rollback as first-class audit events.",
+    "event_ids": [
+      "evt_ai_guidance_001"
+    ]
+  },
+  "candidate_action": {
+    "id": "act_define_audit_events_001",
+    "title": "Define the recorder audit-event vocabulary",
+    "rationale": "A stable event vocabulary is needed before automated actions can be reviewed, interrupted, or replayed consistently.",
+    "event_ids": [
+      "evt_ai_guidance_001"
+    ],
+    "affected_project_ids": [
+      "prj_agent_flight_recorder"
+    ],
+    "human_approval_required": true,
+    "reversibility": "reversible",
+    "urgency": "high",
+    "expires_at": "2026-08-07T17:00:00-04:00",
+    "status": "candidate"
+  }
+}
