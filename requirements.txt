@@ -1,4 +1,6 @@
-# The core graph-vector memory library is pure Python.
-# Dev / test dependencies:
-pytest>=7.0
+# Runtime dependency used by Signal Contract validation.
 jsonschema>=4.18
+
+# Development and verification dependencies.
+pytest>=7.0
+build>=1.2
