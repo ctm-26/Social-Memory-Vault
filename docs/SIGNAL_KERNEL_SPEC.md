@@ -73,8 +73,11 @@ No action execution exists in this milestone.
 
 ## Validation boundary
 
-`schemas/signal.schema.json` validates field shape, allowed values, timestamps,
-hash format, and non-empty reference arrays.
+`social_memory_vault/schemas/signal.schema.json` validates field shape, allowed
+values, timestamps, hash format, and non-empty reference arrays. It is packaged
+with the Python distribution and loaded through `importlib.resources`, so the
+default validator works from an installed wheel as well as a source checkout.
+Callers may still provide an explicit `schema_path` override.
 
 `social_memory_vault.signal_contract.validate_signal_contract()` adds semantic
 link validation:
@@ -90,19 +93,35 @@ project_impact.project_id in candidate_action.affected_project_ids
 ## Acceptance criteria
 
 - `valid_signal.json` passes structural and link validation.
+- `valid_ai_governance_signal.json` passes as a second complete evidence path.
 - `invalid_missing_provenance.json` fails because `source.content_hash` is absent.
 - A candidate action referencing an unrelated event fails link validation.
-- The existing Social Memory Vault tests continue to pass.
+- The complete Social Memory Vault test suite passes on supported Python versions.
+- A built wheel can load the packaged schema outside the repository directory.
 - Fixtures use synthetic data only.
 - No feed ingestion, database, UI, model call, or automatic side effect is added.
+
+## Synthetic governance fixture
+
+`valid_ai_governance_signal.json` models how public security guidance can connect
+to Agent Flight Recorder requirements. Its wording, URL, excerpt, and hash are
+intentionally synthetic; it is a validation fixture, not an archived source.
+The control themes were informed by the Australian Signals Directorate's public
+agentic-AI guidance:
+
+https://www.cyber.gov.au/about-us/view-all-content/news/careful-adoption-of-agentic-ai-in-cyber-defence
 
 ## Files
 
 ```text
+.github/workflows/tests.yml
+pyproject.toml
 docs/SIGNAL_KERNEL_SPEC.md
-schemas/signal.schema.json
+social_memory_vault/schemas/__init__.py
+social_memory_vault/schemas/signal.schema.json
 social_memory_vault/signal_contract.py
 tests/fixtures/valid_signal.json
+tests/fixtures/valid_ai_governance_signal.json
 tests/fixtures/invalid_missing_provenance.json
 tests/test_signal_schema.py
 ```
@@ -110,16 +129,18 @@ tests/test_signal_schema.py
 ## Verification
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install ".[dev]"
 python -m pytest
+python -m build
 ```
 
-Expected result: the original vault tests and four Signal Contract tests pass.
+GitHub Actions runs the complete suite on Python 3.10 through 3.13, builds a
+wheel, reinstalls that wheel, changes to `/tmp`, and verifies that
+`load_signal_schema()` still finds the packaged resource.
 
 ## Deliberate limitations
 
 - One source, claim, event, project impact, and action per signal record.
-- Schema is loaded from the repository source tree, not yet packaged as data.
 - No persistence, migrations, deduplication, contradiction resolution, scoring,
   expiration worker, or MCP interface.
 - No claim extraction or model-generated action proposal.

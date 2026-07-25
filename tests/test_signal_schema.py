@@ -22,13 +22,18 @@ def _load(name: str) -> dict:
         return json.load(handle)
 
 
-def test_signal_schema_is_valid_draft_2020_12() -> None:
+def test_packaged_signal_schema_is_valid_draft_2020_12() -> None:
     schema = load_signal_schema()
     assert schema["$schema"].endswith("draft/2020-12/schema")
+    assert schema["title"] == "Signal Kernel Contract v0.1"
 
 
 def test_complete_evidence_path_passes() -> None:
     validate_signal_contract(_load("valid_signal.json"))
+
+
+def test_ai_governance_evidence_path_passes() -> None:
+    validate_signal_contract(_load("valid_ai_governance_signal.json"))
 
 
 def test_missing_provenance_fails() -> None:

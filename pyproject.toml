@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-memory-vault"
+version = "0.1.0"
+description = "An explainable sparse graph-vector memory layer for language-model systems."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "jsonschema>=4.18",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+  "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["social_memory_vault*"]
+
+[tool.setuptools.package-data]
+"social_memory_vault.schemas" = ["signal.schema.json"]

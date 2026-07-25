@@ -17,8 +17,10 @@ from social_memory_vault import RetrievalConfig, SparseGraphVectorMemory
 @pytest.fixture
 def vault() -> SparseGraphVectorMemory:
     m = SparseGraphVectorMemory()
+    # Keep the person text lexically distinct from the direct AI query. The
+    # graph edge below, rather than duplicate query terms, represents the link.
     m.add_node("chris", "Chris", type="person",
-               text="Chris studies artificial intelligence.")
+               text="Chris studies machine learning systems.")
     m.add_node("elantra", "2017 Hyundai Elantra", type="vehicle",
                text="A 2017 Hyundai Elantra car.")
     m.add_node("ai", "Artificial Intelligence", type="field",
